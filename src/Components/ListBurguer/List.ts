@@ -16,6 +16,7 @@ export const Ul = styled.ul`
     display: flex;
     width: 254px;
     height: 367px;
+    padding: 0 12px;
     flex-direction: column;
     gap: 20px;
     border: 2px solid #e0e0e0;

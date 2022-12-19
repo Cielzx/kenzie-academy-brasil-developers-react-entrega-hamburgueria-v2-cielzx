@@ -29,17 +29,18 @@ export const LoginPage = () => {
       <form action="" onSubmit={handleSubmit(loginForm)}>
         <h2>Login</h2>
         <Input
-          type="email"
+          type="text"
           id="email"
+          label="Email"
           error={errors.email}
-          placeholder="Digite seu nome"
           {...register("email")}
         />
+
         <Input
           type="password"
           id="password"
+          label="Senha"
           error={errors.password}
-          placeholder="Digite sua senha"
           {...register("password")}
         />
         <Button variant="contained" type="submit">

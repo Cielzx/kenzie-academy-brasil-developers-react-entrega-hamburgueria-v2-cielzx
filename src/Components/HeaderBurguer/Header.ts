@@ -61,7 +61,7 @@ export const Head = styled.header`
   }
 
   @media screen and (max-width: 1024px) {
-    width: 96%;
+    width: 94%;
     display: flex;
 
     gap: 20px;

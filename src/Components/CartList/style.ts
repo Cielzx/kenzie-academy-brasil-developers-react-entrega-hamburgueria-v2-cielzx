@@ -45,6 +45,7 @@ export const StyleDiv = styled.div`
     list-style: none;
     margin-top: 10px;
     align-items: center;
+    padding: 15px;
   }
 
   .cart-list {
@@ -70,7 +71,7 @@ export const StyleDiv = styled.div`
     border: none;
     position: relative;
     bottom: 33%;
-    left: 41%;
+    left: 36%;
     color: grey;
     font-size: 17px;
     cursor: pointer;
@@ -83,10 +84,10 @@ export const StyleDiv = styled.div`
     gap: 10px;
   }
   .div-cart {
-    padding: 15px;
     display: flex;
-    /* background-color: var(--grey-0); */
+    background-color: white;
     flex-direction: column;
+    border-radius: 5px;
   }
   .img-cart {
     width: 80px;
@@ -95,11 +96,12 @@ export const StyleDiv = styled.div`
   }
 
   .total-div {
-    width: 100%;
+    width: 97%;
     /* height: 300px; */
     gap: 10px;
     display: flex;
     flex-direction: column;
+    padding: 4px;
   }
 
   .total-div div {
@@ -108,7 +110,7 @@ export const StyleDiv = styled.div`
   }
 
   .total-div button {
-    width: 450px;
+    width: 437px;
     position: relative;
     left: 1%;
     height: 80px;
@@ -201,9 +203,10 @@ export const StyleDiv = styled.div`
       gap: 10px;
     }
     .div-cart {
-      padding: 15px;
       display: flex;
+      background-color: white;
       flex-direction: column;
+      border-radius: 10px;
     }
     .img-cart {
       width: 60px;
@@ -217,9 +220,8 @@ export const StyleDiv = styled.div`
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
       flex-direction: column;
+      padding: 4px;
     }
 
     .total-div div {

@@ -30,7 +30,7 @@ interface iApiContext {
 export const UserContext = createContext<iApiContext>({} as iApiContext);
 
 export const ApiProvider = ({ children }: iApiProvider) => {
-  const { setProd, setUser } = useContext(CartContext);
+  const { setProd, setUser, user } = useContext(CartContext);
   const [loading, setLoading] = useState(true);
 
   const navigate = useNavigate();
@@ -91,6 +91,8 @@ export const ApiProvider = ({ children }: iApiProvider) => {
       setLoading(false);
     }
   }
+
+  console.log(user);
 
   useEffect(() => {
     getList();

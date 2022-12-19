@@ -38,18 +38,18 @@ const Cart = () => {
   return (
     <StyleDiv>
       <div ref={modalRef} className="div-cart">
-        <ul className="cart-ul">
-          <div className="cart-div">
-            <div>
-              <h2>Carrinho de compras</h2>
-              <button
-                className="close-button"
-                onClick={() => setModalIsOpen(false)}
-              >
-                X
-              </button>
-            </div>
+        <div className="cart-div">
+          <div>
+            <h2>Carrinho de compras</h2>
+            <button
+              className="close-button"
+              onClick={() => setModalIsOpen(false)}
+            >
+              X
+            </button>
           </div>
+        </div>
+        <ul className="cart-ul">
           {cart.length > 0 ? (
             <CartList />
           ) : (
@@ -58,20 +58,19 @@ const Cart = () => {
               <span>Adicione itens</span>
             </div>
           )}
-
-          {cart.length > 0 ? (
-            <div className="total-div">
-              <div>
-                <h3>Total</h3>
-
-                <p>{values()}</p>
-              </div>
-              <button onClick={() => remove()}>Remover Todos</button>
-            </div>
-          ) : (
-            <></>
-          )}
         </ul>
+        {cart.length > 0 ? (
+          <div className="total-div">
+            <div>
+              <h3>Total</h3>
+
+              <p>{values()}</p>
+            </div>
+            <button onClick={() => remove()}>Remover Todos</button>
+          </div>
+        ) : (
+          <></>
+        )}
       </div>
     </StyleDiv>
   );

@@ -9,7 +9,7 @@ import { UserContext } from "../../Providers/userContext";
 import { Navigate } from "react-router-dom";
 
 const Main = () => {
-  const { user, modal } = useContext(CartContext);
+  const { prod, user, modal } = useContext(CartContext);
   const { loading, setLoading } = useContext(UserContext);
 
   if (loading) {

@@ -15,21 +15,17 @@ export const DivLoginStyled = styled.div`
     gap: 20px;
   }
 
-  form input {
+  /* form input {
     width: 400px;
     height: 40px;
     border: none;
     border-radius: 6px;
     padding: 20px;
-    background-color: #dddddd;
-  }
+    
+  } */
 
   input:focus {
     outline-color: var(--color-green);
-  }
-
-  form p {
-    color: red;
   }
 
   form button {

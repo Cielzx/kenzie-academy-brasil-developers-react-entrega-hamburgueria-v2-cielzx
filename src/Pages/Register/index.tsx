@@ -49,24 +49,24 @@ export const RegisterPage = () => {
         <Input
           type="text"
           id="text"
+          label="Nome"
           error={errors.name}
-          placeholder="Digite seu nome"
           {...register("name")}
         />
 
         <Input
-          type="email"
+          type="text"
           id="email"
+          label="Email"
           error={errors.email}
-          placeholder="Digite email"
           {...register("email")}
         />
 
         <Input
           type="password"
           id="password"
+          label="Senha"
           error={errors.password}
-          placeholder="Digite sua senha"
           {...register("password")}
         />
         <button type="submit">Cadastrar</button>
